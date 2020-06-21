@@ -1,0 +1,25 @@
+.sidemenu-container{
+    width:36px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding:36px 23px;
+    flex-direction: column;
+}
+
+.sidemenu-icon{
+    height:32px;
+    width:51px;
+    margin-bottom: 90px;
+}
+
+.sidemenu-option{
+    margin-bottom: 40px;
+}
+
+.mode-switcher-container{
+    background-color: white;
+    width:48px;
+    border-radius: 12px;
+    border:1px solid #222222;
+}
