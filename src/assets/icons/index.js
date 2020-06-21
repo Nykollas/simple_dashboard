@@ -6,3 +6,7 @@ export { default as Message } from "./message";
 export { default as Play } from "./play";
 export { default as Graph } from "./graph";
 export { default as Engine } from "./engineering";
+export { default as Dots } from './dots';
+export { default as UpIcon } from './upicon';
+export { default as DownIcon } from './downicon';
+export { default as BellIcon } from './downicon';

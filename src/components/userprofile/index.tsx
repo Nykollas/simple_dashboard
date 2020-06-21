@@ -1,0 +1,1 @@
+export { default UserProfile } from './UserProfile';
