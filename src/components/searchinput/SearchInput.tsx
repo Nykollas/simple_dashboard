@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './style.css';
+import './styles.css';
+import UserProfile from '../userprofile';
+import { SearchIcon } from '../../assets/icons';
 
 
 export interface SearchInputProps {};
@@ -19,7 +21,8 @@ export default class SearchInput extends Component<SearchInputProps, {}>{
     render  = () => {
         return(
             <div className="search-input-container">
-                <input type="text" onChange={this.handleText}></input>
+                <SearchIcon></SearchIcon>
+                <input placeholder="Search" type="text" onChange={this.handleText}></input>
             </div>
         )
     }

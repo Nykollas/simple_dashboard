@@ -1,10 +1,19 @@
 .user-profile-container{
         display: flex;
         flex-direction: row;
+        height:50px;
+        margin-left: auto;
+        align-items: center;
+        justify-content: space-around;
+        width: 200px;
 }
 .user-profile-container p{
-
+    font-weight: bold;
+    font-size: 18px;
+    color:var(--font-color-light)
 }
 .user-profile-container img{
-
+    border-radius: 24px;
+    height:50px;
+    width: 50px;
 }

@@ -9,5 +9,6 @@ export { default as Engine } from "./engineering";
 export { default as Dots } from './dots';
 export { default as UpIcon } from './upicon';
 export { default as DownIcon } from './downicon';
-export { default as BellIcon } from './downicon';
+export { default as BellIcon } from './bell';
 export { default as DownArrow } from './downarrow';
+export { default as SearchIcon } from './searchicon';

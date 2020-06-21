@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 import { Dots, UpIcon, DownIcon } from '../../assets/icons';
 export interface InfoCardProps { up:boolean, title:string, value:number, percent:number} 
 export default function InfoCard({title, value, percent, up}:InfoCardProps){

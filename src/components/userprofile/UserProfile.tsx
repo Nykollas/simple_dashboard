@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { DownArrow } from '../../assets/icons';
+import './style.css';
 
 export interface UserProfileProps {
     imgUrl:string
@@ -12,9 +14,10 @@ class UserProfile extends Component<UserProfileProps> {
             <div className={"user-profile-container"}>
                 <p>{name}</p>
                 <img src={imgUrl}/>
+                <DownArrow></DownArrow>
             </div>
         );
     }
 }
 
-export { UserProfile };
+export default  UserProfile;

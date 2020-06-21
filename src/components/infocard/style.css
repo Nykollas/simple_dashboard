@@ -1,0 +1,53 @@
+.info-card{
+    display: flex;
+    flex-direction: column;
+    border:1px solid var(--light-border);
+    border-radius:16px;
+    padding:0px 16px;
+    flex: 1;
+    background-color: var(--light);
+    margin:36px 24px 0px 0px;
+    cursor: pointer;
+    position: relative;
+    height:124px;
+}
+.info-card-title{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-top: 16px;
+    flex-direction: row;
+}
+.info-card-title p{
+    font-weight: bold;
+    color:var(--font-color-light)
+}
+.info-card-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+}
+.info-card-data p{
+    color:var(--font-color-light)
+}
+.info-card-label{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info-card-label p{
+    margin-right:16px;
+    color:var(--font-color-label-light)
+}   
+
+/* Effects  */
+
+.info-card:hover{
+    box-shadow: 1px 1px 1px 1px #CCCCCC ;
+}
+.info-card:active{
+    top:1px
+    
+}
