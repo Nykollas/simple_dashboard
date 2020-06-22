@@ -1,37 +1,24 @@
 import React, { Component } from 'react';
 
+import { CheckedBox, Box } from '../../assets/icons';
+
 export interface ICheckOptionProps {
-    label:string
+    label: string,
+    handleCheckBox: () => void,
+    checked: boolean
 }
 
-export interface IState {
-    checked:boolean
-}
-
-class CheckOption extends Component<ICheckOptionProps, IState> {
-
-    state = {
-        checked:false
-    }
-
-    handleCheckBox = () => {
-        this.setState(previousState=>{
-            return {
-                checked:!previousState.checked,
-            }
-        })
-    }
+class CheckOption extends Component<ICheckOptionProps> {
 
     render() {
-        const { label } = this.props;
-        const { checked } = this.state;
+        const { label, handleCheckBox, checked } = this.props;
         return (
-            <div className={'check-option-container'}>
-                <div className={ checked ? 'checked' : 'not-checked' }></div>
+            <div onClick={handleCheckBox} className={'check-option-container'}>
+                {checked ? <CheckedBox></CheckedBox> : <Box />}
                 <p>{label}</p>
             </div>
         );
     }
 }
 
-export default  CheckOption;
+export default CheckOption;

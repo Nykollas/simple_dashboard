@@ -12,3 +12,5 @@ export { default as DownIcon } from './downicon';
 export { default as BellIcon } from './bell';
 export { default as DownArrow } from './downarrow';
 export { default as SearchIcon } from './searchicon';
+export { default as CheckedBox } from './checkedbox';
+export { default as Box } from './box';

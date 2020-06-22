@@ -4,13 +4,13 @@
     align-items: center;
     justify-content: center;
     padding:24px;
-    flex:1;
+    flex:2;
     border-radius: 16px;
     margin-top:20px;
     position: relative;
     background-color: var(--light);
     border:1px solid var(--light-border);
-    cursor: pointer;
+    margin-right:32px;
 }
 .line-chart-header{
     display:flex;
@@ -33,13 +33,38 @@
 
 .date-interval-container{
     margin-left:auto;
+    display: flex;
+    flex-direction: row;
+    color:var(--font-color-light);
+    align-items:center
+}
+.date-interval-container input{
+    padding:8px;
+    border:1px solid var(--light-border);
+    border-radius:8px;
+    color:var(--font-color-light);
+    font-family: 'Gilroy';
+
+}
+.date-interval-container p{
+    color:var(--font-color-light);
+    margin: 0px 16px
+}
+
+.check-option-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor:pointer;
+    margin-left: 30px;
+}
+.check-option-container p{
+    font-weight: bold;
+    color:var(--font-color-light);
+    margin-left:12px;
 }
 /* Effects  */
 
 .line-chart-container:hover{
     box-shadow: 1px 1px 1px 1px #CCCCCC ;
-}
-.line-chart-container:active{
-    top:1px
-    
 }
