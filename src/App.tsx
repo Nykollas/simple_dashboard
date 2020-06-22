@@ -4,6 +4,7 @@ import SideMenu from './components/sidemenu';
 import InfoCard from './components/infocard';
 import UserProfile from './components/userprofile';
 import SearchInput from './components/searchinput';
+import LineChart from './components/linechart';
 import { BellIcon } from './assets/icons';
 
 
@@ -24,7 +25,7 @@ function App() {
             <InfoCard up={true} title={"Followers"} value={10} percent={0.7}></InfoCard>
         </div>
         <div className="row">
-          
+      <LineChart></LineChart>
         </div>
         <div className="row">
 
