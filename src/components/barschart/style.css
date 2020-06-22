@@ -1,0 +1,90 @@
+.bars-chart-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:24px;
+    flex:1;
+    border-radius: 16px;
+    background-color: var(--light);
+    border:1px solid var(--light-border);
+    margin-top:20px;
+    height:270px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.bars{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+.bar-women{
+    background-color:#E786D7;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    width: 36px;
+    height:80px;
+    
+}
+.bar-man{
+    background-color: #7F7FD5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    height:20px;
+    width: 36px
+}
+.grid{
+    height:80px;
+    width:116px;
+    border-top:solid 3px black;
+    border-left:solid 3px black;
+}
+.bars-container{
+    margin-top: auto;
+    display:block; 
+    position: absolute;    
+    z-index:2;  
+}
+.grids{
+    display: flex;
+    flex-direction: row;
+}
+.grids:last-child{
+    border-bottom:solid 3px black;
+    border-right: solid 3px black;
+}
+.x-ticks{
+    display: flex;
+    flex-direction: row;
+}
+.y-ticks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1;
+}
+.y-ticks-darker>.tick{
+    height: 80px;
+    width: 12px;
+    border-top: 3px solid black;    
+}
+.y-ticks-darker>.tick:last-child{
+    border-bottom: 3px solid black;    
+}
+.tick:last-child{
+    border-bottom: 3px solid gray;    
+}
+
+.tick{
+    height: 80px;
+    width: 12px;
+    border-top: 3px solid gray;
+}

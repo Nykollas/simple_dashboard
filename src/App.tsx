@@ -6,6 +6,7 @@ import UserProfile from './components/userprofile';
 import SearchInput from './components/searchinput';
 import LineChart from './components/linechart';
 import PizzaChart from './components/pizzachart';
+import BarsChart from './components/barschart';
 import { BellIcon } from './assets/icons';
 
 
@@ -30,7 +31,7 @@ function App() {
             <PizzaChart></PizzaChart>
         </div>
         <div className="row">
-
+              <BarsChart></BarsChart>
         </div>
       </div>
     </div>
