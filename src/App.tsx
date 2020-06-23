@@ -7,6 +7,7 @@ import SearchInput from './components/searchinput';
 import LineChart from './components/linechart';
 import PizzaChart from './components/pizzachart';
 import BarsChart from './components/barschart';
+import HorizontalBarsChart from './components/horizontalbarschart';
 import { BellIcon } from './assets/icons';
 
 
@@ -32,6 +33,7 @@ function App() {
         </div>
         <div className="row">
               <BarsChart></BarsChart>
+              <HorizontalBarsChart></HorizontalBarsChart>
         </div>
       </div>
     </div>

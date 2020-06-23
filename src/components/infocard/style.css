@@ -11,6 +11,11 @@
     position: relative;
     height:124px;
 }
+
+.info-card:last-child{
+    margin-right: 0px;
+}
+
 .info-card-title{
     display: flex;
     flex: 1;

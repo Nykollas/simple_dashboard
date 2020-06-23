@@ -10,7 +10,7 @@
     position: relative;
     background-color: var(--light);
     border:1px solid var(--light-border);
-    margin-right:32px;
+    margin-right:24px;
 }
 .line-chart-header{
     display:flex;

@@ -8,8 +8,38 @@
     background-color: var(--light);
     border:1px solid var(--light-border);
     margin-top:20px;
-    height:270px;
+    height:300px;
 }
+.bars-chart-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.bars-legend{
+    display: flex;
+    flex-direction: row;
+}
+
+.bars-legend>.box:nth-child(1) {
+    width: 24px;
+    height: 24px;
+    border-radius:6px;
+    margin-right: 12px;
+    background-color:#E786D7
+}
+
+.bars-legend>.box:nth-child(3) {
+    width: 24px;
+    height: 24px;
+    border-radius:6px;
+    margin-right: 12px;
+    background-color:#7F7FD5;
+    margin-left: 24px;
+}
+
 .column{
     display: flex;
     flex-direction: column;
@@ -28,23 +58,23 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     position: relative;
-    width: 36px;
-    height:80px;
-    
+    height:0px;
+    width: 24px;
+    transition: height 2s;
 }
 .bar-man{
     background-color: #7F7FD5;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-
-    height:20px;
-    width: 36px
+    height:0px;
+    width: 24px;
+    transition: height 2s;
 }
 .grid{
     height:80px;
-    width:116px;
-    border-top:solid 3px black;
-    border-left:solid 3px black;
+    width:64px;
+    border-top:solid 3px var(--light-border);
+    border-left:solid 3px var(--light-border);
 }
 .bars-container{
     margin-top: auto;
@@ -57,12 +87,23 @@
     flex-direction: row;
 }
 .grids:last-child{
-    border-bottom:solid 3px black;
-    border-right: solid 3px black;
+    border-bottom:solid 3px var(--light-border);
+    border-right: solid 3px var(--light-border);
 }
 .x-ticks{
     display: flex;
     flex-direction: row;
+    margin-left:56px;
+    margin-top:20px;
+
+}
+.x-ticks label{
+    color:var(--font-color-light);
+    font-size:16px;
+    font-weight: normal;
+    width:68px;
+    margin:auto;
+    text-align: center;
 }
 .y-ticks{
     display: flex;
@@ -74,17 +115,31 @@
 .y-ticks-darker>.tick{
     height: 80px;
     width: 12px;
-    border-top: 3px solid black;    
+    border-top: 3px solid var(--font-color-light)
 }
 .y-ticks-darker>.tick:last-child{
-    border-bottom: 3px solid black;    
+    border-bottom: 3px solid var(--font-color-light);    
 }
 .tick:last-child{
-    border-bottom: 3px solid gray;    
+    border-bottom: 3px solid var(--light-border);    
 }
-
 .tick{
     height: 80px;
     width: 12px;
-    border-top: 3px solid gray;
+    border-top: 3px solid var(--light-border);
+}
+.tick-label{
+    height:90px;
+    width: 48px;
+}
+.tick-label:last-child{
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tick-label p{
+    font-family: 'Gilroy';
+    color:var(--font-color-light);
+    font-size:16px;
 }

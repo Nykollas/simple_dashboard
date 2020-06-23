@@ -13,7 +13,7 @@ class PizzaChart extends Component<IPizzaChartProps> {
 
         const options = {
             
-            width:360,
+            width:336,
             animationEnabled: true,
             legend:{
                 horizontalAlign:'right',

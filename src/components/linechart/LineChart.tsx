@@ -15,8 +15,6 @@ export interface ILineChartState {
 
 const { CanvasJSChart, CanvasJS } = CanvasJSReact;
 
-
-
 class LineChart extends Component<ILineChartProps, ILineChartState> {
 
     state = {
@@ -30,6 +28,7 @@ class LineChart extends Component<ILineChartProps, ILineChartState> {
             followers:false,
         })
     }
+    
     setFollowers = () => {
         this.setState({
             total:false,
@@ -40,8 +39,6 @@ class LineChart extends Component<ILineChartProps, ILineChartState> {
     render() {
 
         const { total, followers } = this.state;
-
-
         const options = {
             animationEnabled: true,
             height:200,

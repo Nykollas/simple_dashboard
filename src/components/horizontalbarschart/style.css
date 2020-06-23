@@ -1,0 +1,62 @@
+.horizontal-bars-chart-container{
+    height:300px;
+    display:flex;
+    flex-direction: column;
+    flex:2;
+    background-color:var(--light);
+    padding: 24px;
+    margin-top: 24px;
+    margin-left: 32px;
+    border-radius: 16px;
+    justify-content: space-between;
+}
+
+.horizontal-bars-chart-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.horizontal-bars-chart-header p{
+    font-size: 16px;
+    font-weight: bold;
+    color:var(--font-color-light)
+}
+.horizontal-bar{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    margin-right: 20px;
+    margin-bottom: 36px;
+}
+.horizontal-bar:last-child{
+    margin-right: 0px;
+}
+.horizontal-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.horizontal-header p{
+    font-size: 16px;
+    margin-bottom: 12px;
+    color:var(--font-color-light)
+}
+.bar-container{
+    height:14px;
+    width: 100%;    
+}
+.bar-container .bar{
+    height: inherit;
+    width: inherit;
+    border-radius: 8px;
+    background-color: var(--light-bg);
+}
+.bar-container .bar-filled{
+    height: inherit;
+    border-radius: 8px;
+    background-color: #7F7FD5;
+    width: 0px;
+    transition: width 2s;
+}
+
