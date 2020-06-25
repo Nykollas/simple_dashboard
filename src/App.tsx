@@ -8,11 +8,20 @@ import LineChart from './components/linechart';
 import PizzaChart from './components/pizzachart';
 import BarsChart from './components/barschart';
 import HorizontalBarsChart from './components/horizontalbarschart';
+
+
 import { BellIcon } from './assets/icons';
 
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+import  reducer  from './redux/reducer';
+
+const store  =  createStore(reducer);
 
 function App() {
   return (
+    <Provider store={store}>
     <div className="main  ">
       <SideMenu darkMode={false}></SideMenu>
       <div className="data-container">
@@ -37,6 +46,7 @@ function App() {
         </div>
       </div>
     </div>
+    </Provider>
   );
 }
 

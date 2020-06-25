@@ -5,8 +5,6 @@
     padding:24px;
     flex:1;
     border-radius: 16px;
-    background-color: var(--light);
-    border:1px solid var(--light-border);
     margin-top:20px;
     height:300px;
 }
@@ -17,6 +15,11 @@
     align-items: center;
     width: 100%;
     margin-bottom: 24px;
+}
+.bars-chart-header p{
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Gilroy'
 }
 .bars-legend{
     display: flex;
@@ -73,8 +76,6 @@
 .grid{
     height:80px;
     width:64px;
-    border-top:solid 3px var(--light-border);
-    border-left:solid 3px var(--light-border);
 }
 .bars-container{
     margin-top: auto;
@@ -86,10 +87,7 @@
     display: flex;
     flex-direction: row;
 }
-.grids:last-child{
-    border-bottom:solid 3px var(--light-border);
-    border-right: solid 3px var(--light-border);
-}
+
 .x-ticks{
     display: flex;
     flex-direction: row;
@@ -98,7 +96,6 @@
 
 }
 .x-ticks label{
-    color:var(--font-color-light);
     font-size:16px;
     font-weight: normal;
     width:68px;
@@ -115,18 +112,10 @@
 .y-ticks-darker>.tick{
     height: 80px;
     width: 12px;
-    border-top: 3px solid var(--font-color-light)
-}
-.y-ticks-darker>.tick:last-child{
-    border-bottom: 3px solid var(--font-color-light);    
-}
-.tick:last-child{
-    border-bottom: 3px solid var(--light-border);    
 }
 .tick{
     height: 80px;
     width: 12px;
-    border-top: 3px solid var(--light-border);
 }
 .tick-label{
     height:90px;
@@ -140,6 +129,5 @@
 }
 .tick-label p{
     font-family: 'Gilroy';
-    color:var(--font-color-light);
     font-size:16px;
 }

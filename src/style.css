@@ -5,6 +5,12 @@
   --light:#FDFDFF;
   --light-border:#EBEBEB;
   --font-color-label-light:#979797;
+
+  --dark-bg:#212427;
+  --dark:#282C31;
+  --dark-border:#4D4D4D;
+  --font-color-dark:#CACACA;
+  --font-color-label-dark:#979797;
 }
 .main{
   display:flex;
@@ -31,6 +37,8 @@ p{
 .data-container > .row > p{
   margin-right: 60px;
   font-family: 'Gilroy';
+  font-weight: normal;
+  font-size: 20px;
   color:var(--font-color-light)
 }
 
