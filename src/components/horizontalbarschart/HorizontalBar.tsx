@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 const barFilledStyle = (percentValue:number) => ({
     width:percentValue,
@@ -8,6 +9,7 @@ const barFilledStyle = (percentValue:number) => ({
 export interface IHorizontalBarProps {
     countryName:string,
     percentValue:number,
+    dark:boolean
 }
 
 class HorizontalBar extends Component<IHorizontalBarProps> {
@@ -28,16 +30,28 @@ class HorizontalBar extends Component<IHorizontalBarProps> {
     }
 
     render() {
-        const { countryName } = this.props;
+        const { countryName, dark } = this.props;
         const { percentValue } = this.state;
+
+        const theme = dark ? {
+            color: 'var(--font-color-dark)',
+            backgroundColor:'var(--dark-border)'
+        } :
+        {
+            color: ' var(--font-color-light)',
+            backgroundColor:'var(--light-border)'
+        }
+
+        const { color, backgroundColor } = theme;
+
         return (
             <div className={"horizontal-bar"}>
                 <div className={"horizontal-header"}>
-                    <p>{countryName}</p>
-                    <p>{percentValue}</p>
+                    <p style={{color}}>{countryName}</p>
+                    <p style={{color}}>{percentValue}</p>
                 </div>
                 <div className={"bar-container"}>
-                    <div className={"bar"} >
+                    <div className={"bar"} style={{backgroundColor}} >
                         <div className={"bar-filled"} style={barFilledStyle(percentValue)}>
                         </div>
                     </div>
@@ -47,4 +61,9 @@ class HorizontalBar extends Component<IHorizontalBarProps> {
     }
 }
 
-export default HorizontalBar;
+
+const mapStateToProps = (state) => {
+    return { dark: state.dark }
+}
+
+export default  connect(mapStateToProps, null)(HorizontalBar); 

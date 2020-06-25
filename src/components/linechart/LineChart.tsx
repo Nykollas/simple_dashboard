@@ -3,9 +3,10 @@ import './style.css';
 import DateInterval from './DateInterval';
 import CheckOption from './CheckOption';
 import CanvasJSReact from '../../assets/lib/canvasjs.react';
+import { connect } from 'react-redux';
 
 export interface ILineChartProps {
-
+    dark:boolean
 }
 
 export interface ILineChartState {
@@ -39,13 +40,32 @@ class LineChart extends Component<ILineChartProps, ILineChartState> {
     render() {
 
         const { total, followers } = this.state;
+        const { dark } = this.props;
+
+        const theme = dark ? {
+            backgroundColor: 'var(--dark)',
+            color: 'var(--font-color-dark)',
+            border:'1px solid var(--dark-border)'
+        } :
+        {
+            backgroundColor: 'var(--light)',
+            color: ' var(--font-color-light)',
+            border:'1px solid var(--light-border)'
+        }
+        const {
+            backgroundColor,
+            color,
+            border
+        } = theme;
+
         const options = {
             animationEnabled: true,
             height:200,
+            backgroundColor:dark ? "#282C31" : "#FDFDFF",
             axisX: {
-                lineColor: "#EFF3F9",
-                gridColor: "#EFF3F9",
-                tickColor: "#979797",
+                lineColor:  dark ? "#4D4D4D" : "#EFF3F9",
+                gridColor: dark ? "#4D4D4D" : "#EFF3F9",
+                tickColor: dark ? "#979797" : "#C4C4C4",
                 labelFontColor: '#979797',
                 gridThickness: 2,
                 tickThickness: 2,
@@ -53,9 +73,9 @@ class LineChart extends Component<ILineChartProps, ILineChartState> {
                 lineThickness: 4,
             },
             axisY: {
-                lineColor: "#EFF3F9",
-                tickColor: "#979797",
-                gridColor: "#EFF3F9",
+                lineColor:  dark ? "#4D4D4D" : "#EFF3F9",
+                tickColor: dark ? "#979797" : "#C4C4C4",
+                gridColor: dark ? "#4D4D4D" : "#EFF3F9",
                 labelFontColor: '#979797',
                 gridThickness: 2,
                 tickThickness: 2,
@@ -78,9 +98,9 @@ class LineChart extends Component<ILineChartProps, ILineChartState> {
         }
 
         return (
-            <div className={'line-chart-container'}>
+            <div className={'line-chart-container'} style={{backgroundColor, border}}>
                 <div className={'line-chart-header'}>
-                    <p>Audience Reach</p>
+                    <p style={{color}}>Audience Reach</p>
                     <DateInterval></DateInterval>
                     <CheckOption 
                         handleCheckBox={this.setTotal}
@@ -95,7 +115,6 @@ class LineChart extends Component<ILineChartProps, ILineChartState> {
                 </div>
                 <div className={'chart-container'}>
                     <CanvasJSChart options={options}
-                    /* onRef = {ref => this.chart = ref} */
                     />
                 </div>
             </div>
@@ -103,4 +122,9 @@ class LineChart extends Component<ILineChartProps, ILineChartState> {
     }
 }
 
-export default LineChart;
+const mapStateToProps = (state) => {
+    return {
+        dark:state.dark
+    }
+}
+export default connect(mapStateToProps, null)(LineChart);

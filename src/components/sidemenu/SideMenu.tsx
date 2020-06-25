@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SideMenuOption from './SideMenuOption';
+import { connect } from 'react-redux';
 import { 
         Logo,
         Home,
@@ -13,10 +14,27 @@ import {
 import "./styles.css";
 import ModeSwitcher from './ModeSwitcher';
 
-export interface SideMenuProps { darkMode: boolean };
-export default class SideMenu extends Component<SideMenuProps, {}> {
+export interface SideMenuProps { dark: boolean };
+class SideMenu extends Component<SideMenuProps, {}> {
     render() {
-        return <div className={'sidemenu-container'}>
+
+        const { dark } = this.props;
+        const theme = dark ? {
+            backgroundColor: 'var(--dark)',
+            color: 'var(--font-color-dark)',
+            border:'1px solid var(--dark-border)'
+        } :
+        {
+            backgroundColor: 'var(--light)',
+            color: ' var(--font-color-light)',
+            border:'1px solid var(--light-border)'
+        }
+        const {
+            backgroundColor,
+            color,
+            border
+        } = theme;
+        return <div className={'sidemenu-container'} style={{backgroundColor, border}}>
                     <div className={"sidemenu-icon"}>
                     <Logo></Logo>
                     </div>
@@ -31,3 +49,11 @@ export default class SideMenu extends Component<SideMenuProps, {}> {
                 </div>
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        dark:state.dark,
+    }
+}
+
+export default connect(mapStateToProps, null)(SideMenu);

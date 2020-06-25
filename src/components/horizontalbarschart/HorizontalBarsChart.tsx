@@ -1,17 +1,39 @@
 import React, { Component } from 'react';
 import HorizontalBar from './HorizontalBar';
+import { connect } from 'react-redux';
 import './style.css';
 
 export interface IHorizontalBarsChartProps {
+
+    dark:boolean
 
 }
 
 class HorizontalBarsChart extends Component<IHorizontalBarsChartProps> {
     render = () => {
+
+        const { dark } = this.props;
+
+        const theme = dark ? {
+            backgroundColor: 'var(--dark)',
+            color: 'var(--font-color-dark)',
+            border:'1px solid var(--dark-border)'
+        } :
+        {
+            backgroundColor: 'var(--light)',
+            color: ' var(--font-color-light)',
+            border:'1px solid var(--light-border)'
+        }
+        const {
+            backgroundColor,
+            color,
+            border
+        } = theme;
+
         return (
-            <div className={'horizontal-bars-chart-container'}>
+            <div className={'horizontal-bars-chart-container'} style={{backgroundColor, border}}>
                 <div className={"horizontal-bars-chart-header"}>
-                    <p>Geo</p>
+                    <p style={{color}}>Geo</p>
                 </div>
                 <div className={'row'}>
                     <HorizontalBar countryName={"Russia"}
@@ -51,5 +73,10 @@ class HorizontalBarsChart extends Component<IHorizontalBarsChartProps> {
     }
 }
 
+const mapStateToProps = (state) => {
+    return {
+        dark:state.dark
+    }
+}
 
-export default HorizontalBarsChart;
+export default  connect(mapStateToProps, null)(HorizontalBarsChart);

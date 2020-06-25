@@ -10,11 +10,8 @@ export interface IBarsChartProps {
 }
 
 class BarsChart extends Component<IBarsChartProps> {
-
     render() {
-
         const { dark } = this.props;
-
         const theme = dark ? {
             backgroundColor: 'var(--dark)',
             color: 'var(--font-color-dark)',
@@ -25,7 +22,7 @@ class BarsChart extends Component<IBarsChartProps> {
             borderBottom: 'solid 3px  var(--dark-border)'
         } :
             {
-                backgroundColor: '3px solid var(--light)',
+                backgroundColor: 'var(--light)',
                 color: ' var(--font-color-light)',
                 border: '1px solid var(--light-border)',
                 borderLeft: 'solid 3px  var(--light-border)',
@@ -40,7 +37,6 @@ class BarsChart extends Component<IBarsChartProps> {
             border,
             borderRight,
         } = theme;
-
         return (
             <div className={'bars-chart-container'} style={{ backgroundColor, border }}>
                 <div className={"bars-chart-header"}>
