@@ -61,7 +61,7 @@ class LineChart extends Component<ILineChartProps, ILineChartState> {
         const options = {
             animationEnabled: true,
             height:200,
-            backgroundColor:dark ? "#282C31" : "#FDFDFF",
+            backgroundColor:dark ? "#282C3100" : "#FDFDFF00",
             axisX: {
                 lineColor:  dark ? "#4D4D4D" : "#EFF3F9",
                 gridColor: dark ? "#4D4D4D" : "#EFF3F9",
@@ -84,8 +84,8 @@ class LineChart extends Component<ILineChartProps, ILineChartState> {
             },
             data: [{
                 type: "spline",
-                markerColor: "#E786D7",
-                lineColor: "#7F7FD5",
+                markerColor: "#3471db",
+                lineColor: "#25bb84",
 
                 dataPoints: [
                     { label: "31/01", y: 10 },
@@ -100,7 +100,7 @@ class LineChart extends Component<ILineChartProps, ILineChartState> {
         return (
             <div className={'line-chart-container'} style={{backgroundColor, border}}>
                 <div className={'line-chart-header'}>
-                    <p style={{color}}>Audience Reach</p>
+                    <p style={{color}}>Audience</p>
                     <DateInterval></DateInterval>
                     <CheckOption 
                         handleCheckBox={this.setTotal}

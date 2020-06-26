@@ -5,7 +5,7 @@ export interface SideMenuOptionProps {
 class SideMenuOption extends Component<SideMenuOptionProps, {}> {
     render  = () => {
         const { icon } = this.props;
-        return <div className="sidemenu-option">
+        return <div style={{cursor:'pointer'}} className="sidemenu-option">
                   {icon}
                </div>
     }

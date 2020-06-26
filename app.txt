@@ -1,0 +1,68 @@
+Telas:
+
+   Usuário:
+	SplashScreen
+	Login
+	Cadastro (Cadastro)
+	Meus Dados
+	Editar Meus Dados
+	Inserção de código confirmação de email ( Cadastro)
+	Informar Email (Recuperação de senha)
+	Inserir Código (Recuperação de senha)
+	Formulário de criação de requisição ( Requisição de revalidação)
+	Formulário de edição de requisição 
+	Checkout ( Pagamento da solicitação de requisição)
+	Tela Aguardando Agendamento
+	Formulário de Agendamento
+	Tela requisição não aprovada 
+	Tela de confirmação de agendamento 
+
+   Empresa:
+ 	Login
+	Configuração dos dados do administrador
+	Lista de requisições
+	Tela de requisição ( Requisição específica)
+
+
+   Serviços:
+	Autenticação
+	Storage ( Armazenamento de assets, pdf, imagens das requisições)
+	Gateway de pagamento
+
+Backend:
+	
+	
+	Rotas:
+		Cadastrar Usuário (POST)
+		Remover Usuário (DELETE)
+		Editar Usuário (UPDATE)
+		Mostra Usuário (GET)
+
+		Criar Requisição (POST)
+		Remover Requisição (DELETE)
+		Editar Requisição (UPDATE)
+		Mostrar Requisição (GET)
+		
+		Requisição Status (GET)
+		Aprovar Requisição (POST)
+		Reprovar Requisição (POST)
+
+		Criar Agendamento (POST)
+		Cancelar Agendamento (POST)
+		Mostrar Agendamento (GET)
+		
+
+		
+	
+	
+	
+	
+	
+	
+	
+
+	
+        
+	
+	
+	

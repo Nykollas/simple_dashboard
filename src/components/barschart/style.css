@@ -2,11 +2,15 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding:24px;
+    padding:24px 56px;
     flex:1;
     border-radius: 16px;
     margin-top:20px;
     height:300px;
+    cursor: pointer;
+}
+.bars-chart-container:hover{
+    box-shadow: 1px 1px 1px  #dddddd;
 }
 .bars-chart-header{
     display: flex;
@@ -31,7 +35,7 @@
     height: 24px;
     border-radius:6px;
     margin-right: 12px;
-    background-color:#E786D7
+    background-color:#3471db
 }
 
 .bars-legend>.box:nth-child(3) {
@@ -39,7 +43,7 @@
     height: 24px;
     border-radius:6px;
     margin-right: 12px;
-    background-color:#7F7FD5;
+    background-color:#25bb84;
     margin-left: 24px;
 }
 
@@ -57,7 +61,7 @@
     justify-content: center;
 }
 .bar-women{
-    background-color:#E786D7;
+    background-color:#3471db;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     position: relative;
@@ -66,7 +70,7 @@
     transition: height 2s;
 }
 .bar-man{
-    background-color: #7F7FD5;
+    background-color: #25bb84;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     height:0px;

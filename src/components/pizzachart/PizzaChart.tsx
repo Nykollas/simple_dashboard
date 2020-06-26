@@ -31,7 +31,7 @@ class PizzaChart extends Component<IPizzaChartProps> {
 
         const options = {
             
-            width:336,
+            width:300,
             animationEnabled: true,
             backgroundColor:dark ? "#282C31" : "#FFF",
             legend:{
@@ -45,7 +45,6 @@ class PizzaChart extends Component<IPizzaChartProps> {
             data: [{
                 type: "pie",
                 showInLegend:true,
-
                 indexLabelLineDashType: "dash",
                 indexLabelPlacement: "inside",
                 indexLabel:"{y}%",
@@ -55,8 +54,8 @@ class PizzaChart extends Component<IPizzaChartProps> {
                 startAngle: 240,
                 legendText:"{label}",
                 dataPoints: [
-                    {y: 60, label: "Desktop",color: "#7F7FD5"},
-                    {y: 40, label: "Mobile", color:"#E786D7"},
+                    {y: 60, label: "Desktop",color: "#25bb84"},
+                    {y: 40, label: "Mobile", color:"#3471db"},
                 ],
                 
             }]

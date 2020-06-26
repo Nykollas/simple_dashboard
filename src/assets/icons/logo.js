@@ -8,19 +8,19 @@ export default  function Logo(){
     <rect y="26" width="19" height="20" rx="9.5" fill="url(#paint3_linear)"/>
     <defs>
     <linearGradient id="paint0_linear" x1="1.71" y1="-3.68059e-08" x2="18.7099" y2="20.9564" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#A991E0"/>
+    <stop stop-color="#3471db"/>
     <stop offset="1" stop-color="#AF82D6"/>
     </linearGradient>
     <linearGradient id="paint1_linear" x1="24.71" y1="-3.68059e-08" x2="41.7099" y2="20.9564" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#A991E0"/>
+    <stop stop-color="#3471db"/>
     <stop offset="1" stop-color="#AF82D6"/>
     </linearGradient>
     <linearGradient id="paint2_linear" x1="24.71" y1="26" x2="41.7099" y2="46.9564" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#A991E0"/>
+    <stop stop-color="#3471db"/>
     <stop offset="1" stop-color="#AF82D6"/>
     </linearGradient>
     <linearGradient id="paint3_linear" x1="1.71" y1="26" x2="18.7099" y2="46.9564" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#A991E0"/>
+    <stop stop-color="#3471db"/>
     <stop offset="1" stop-color="#AF82D6"/>
     </linearGradient>
     </defs>

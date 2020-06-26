@@ -50,7 +50,7 @@
 /* Effects  */
 
 .info-card:hover{
-    box-shadow: 1px 1px 1px 1px #CCCCCC ;
+    box-shadow: 1px 1px 1px  #dddddd;
 }
 .info-card:active{
     top:1px

@@ -15,7 +15,7 @@ const moonIconDark: Properties = {
 }
 
 const switcherContainerBG:Properties = {
-    backgroundColor:'#7F7FD5'
+    backgroundColor:'#25bb84'
 }
 
 export interface IModelSwitcherProps {

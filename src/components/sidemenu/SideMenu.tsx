@@ -38,6 +38,7 @@ class SideMenu extends Component<SideMenuProps, {}> {
                     <div className={"sidemenu-icon"}>
                     <Logo></Logo>
                     </div>
+                    <ModeSwitcher></ModeSwitcher>
                     <SideMenuOption icon={<Home></Home>}></SideMenuOption>
                     <SideMenuOption icon={<Jornal></Jornal>}></SideMenuOption>
                     <SideMenuOption icon={<People></People>}></SideMenuOption>
@@ -45,7 +46,7 @@ class SideMenu extends Component<SideMenuProps, {}> {
                     <SideMenuOption icon={<Play></Play>}></SideMenuOption>
                     <SideMenuOption icon={<Graph></Graph>}></SideMenuOption>
                     <SideMenuOption icon={<Engine></Engine>}></SideMenuOption>
-                    <ModeSwitcher></ModeSwitcher>
+                    
                 </div>
     }
 }

@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding:24px;
+    padding:24px 32px;
     flex:2;
     border-radius: 16px;
     margin-top:20px;
@@ -22,7 +22,8 @@
 }
 .line-chart-header > p{
     font-weight: bold;
-    color: var(--font-color-light)
+    color: var(--font-color-light);
+    margin-right: 20px;
 }
 .chart-container{
     display: flex;
@@ -66,5 +67,5 @@
 /* Effects  */
 
 .line-chart-container:hover{
-    box-shadow: 1px 1px 1px 1px #CCCCCC ;
+    box-shadow: 1px 1px 1px  #dddddd;
 }

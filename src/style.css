@@ -33,13 +33,16 @@ p{
 .data-container{
   padding:50px;
   width: 100%;
+  background-color: var(--light-bg);
+  transition:background-color 0.2s;
 }
 .data-container > .row > p{
   margin-right: 60px;
   font-family: 'Gilroy';
   font-weight: normal;
   font-size: 20px;
-  color:var(--font-color-light)
+  color:var(--font-color-light);
+
 }
 
 /*  Font reference */

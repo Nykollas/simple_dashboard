@@ -27,7 +27,7 @@ function App() {
     
       <div className="main">
         <SideMenu darkMode={false}></SideMenu>
-        <div className="data-container" style={ dark ? { backgroundColor: "#212427" } : { backgroundColor: "#EFF3F9" }}>
+        <div className="data-container" style={ dark ? { backgroundColor: "#212427" } : { backgroundColor: "var(--light-bg)" }}>
           <div className="row">
             <p style={dark ? { color:"#CACACA"} :{ color:"#4F4F4F"}}>Statistics</p>
             <SearchInput></SearchInput>
