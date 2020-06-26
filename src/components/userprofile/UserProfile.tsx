@@ -30,7 +30,10 @@ class UserProfile extends Component<UserProfileProps> {
         return (
             <div className={"user-profile-container"}>
                 <p style={{color}}>{name}</p>
-                <img src={imgUrl}/>
+                
+                    <img src={imgUrl}/>
+                
+                
                 <DownArrow></DownArrow>
             </div>
         );
